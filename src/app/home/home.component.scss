@@ -1,0 +1,19 @@
+section {
+    background-position: center center; 
+    background-size: cover;
+    height: 100vh;
+}
+
+.row {
+    height: 100vh;
+
+    h1 {
+        text-shadow: 5px 5px 7px black;
+        font-size: 50px;
+        font-weight: 600;
+    }
+}
+
+.shadow {
+    text-shadow: 5px 5px 7px black;
+}

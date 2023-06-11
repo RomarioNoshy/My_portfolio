@@ -1,0 +1,67 @@
+<section id="contact" class="mt-5 py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title m-auto pt-5">
+                    <h2 class=" text-center h1 fw-bold">Contact Me</h2>
+                    <div class="bg-primary line m-auto"></div>
+                </div>
+                <div class="w-50 mt-5">
+                    <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+                        <div class="input-data">
+                            <input type="text" class="form-control my-4" formControlName="first_name"
+                                placeholder="First Name">
+                            <div *ngIf="contactForm.get('first_name')?.errors&&contactForm.get('first_name')?.touched"
+                                class="text-danger">
+                                <p *ngIf="contactForm.get('first_name')?.getError('required')">First Name is Required
+                                </p>
+                                <p *ngIf="contactForm.get('first_name')?.getError('minlength')">First Name minlength
+                                    should be 3</p>
+                                <p *ngIf="contactForm.get('first_name')?.getError('maxlength')">First Name maxlength
+                                    should be 10</p>
+                            </div>
+                        </div>
+                        <div class=" input-data">
+                            <input type="text" class="form-control my-4" formControlName="last_name"
+                                placeholder="Last Name">
+                            <div *ngIf="contactForm.get('last_name')?.errors&&contactForm.get('last_name')?.touched"
+                                class="text-danger">
+                                <p *ngIf="contactForm.get('last_name')?.getError('required')">First Name is Required</p>
+                                <p *ngIf="contactForm.get('last_name')?.getError('minlength')">First Name minlength
+                                    should be 3</p>
+                                <p *ngIf="contactForm.get('last_name')?.getError('maxlength')">First Name maxlength
+                                    should be 10</p>
+                            </div>
+                        </div>
+                        <div class="input-data">
+                            <input type="text" class="form-control my-4" formControlName="email" placeholder="Email">
+                            <div *ngIf="contactForm.get('email')?.errors&&contactForm.get('email')?.touched"
+                                class="text-danger">
+                                <p *ngIf="contactForm.get('email')?.getError('required')">First Name is Required</p>
+                                <p *ngIf="contactForm.get('email')?.getError('email')">Enter a valid email address
+                                    "Name@mail" </p>
+
+                            </div>
+                        </div>
+                        <div class="input-data">
+                            <textarea type="text" class="form-control my-4" formControlName="text_massage"
+                                placeholder="Enter Massage"></textarea>
+                            <div *ngIf="contactForm.get('text_massage')?.errors&&contactForm.get('text_massage')?.touched"
+                                class="text-danger">
+                                <p *ngIf="contactForm.get('text_massage')?.getError('required')">First Name is Required
+                                </p>
+                                <p *ngIf="contactForm.get('text_massage')?.getError('minlength')">First Name minlength
+                                    should be 3</p>
+                                <p *ngIf="contactForm.get('text_massage')?.getError('maxlength')">First Name maxlength
+                                    should be 200</p>
+                            </div>
+                        </div>
+                        <button [disabled]="contactForm.invalid" type="submit" 
+                            class="btn btn-primary px-4">Send</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
