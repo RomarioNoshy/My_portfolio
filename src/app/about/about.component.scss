@@ -38,24 +38,17 @@ ul {
     padding: 0;
 }
 
-@keyframes social_up {
-    0% {
-        position-top: -10px;
-    }
-
-    50% {
-        position-top: 5px;
-    }
-
-    100% {
-        position-top: 10px;
-    }
-}
-
-@media screen and (max-width:776px) {
+@media screen and (max-width:767px) {
     .profile-image {
         width: 150px;
         height: 200px;
-        margin: 0;
+        margin: auto;
+    }
+    .body {
+        flex-wrap: wrap;
+    }
+    
+    .caption .fw-bold {
+        display: none;
     }
 }

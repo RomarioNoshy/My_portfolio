@@ -22,7 +22,8 @@ export class ContactComponent implements OnInit {
    this.contactForm.reset();
   }
 
-  
+  whatsapp:string = "https:/wa.me/+2001550448966";
+  gmail:string = "mailto:romarionoshy@gmail.com";
   constructor( ) { }
 
   ngOnInit(): void {

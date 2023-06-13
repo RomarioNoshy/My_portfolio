@@ -6,7 +6,7 @@
                     <h2 class=" text-center h1 fw-bold">Contact Me</h2>
                     <div class="bg-primary line m-auto"></div>
                 </div>
-                <div class="w-50 mt-5">
+                <div class="col-md-12 col-sm-12 mt-5">
                     <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
                         <div class="input-data">
                             <input type="text" class="form-control my-4" formControlName="first_name"
@@ -48,17 +48,27 @@
                                 placeholder="Enter Massage"></textarea>
                             <div *ngIf="contactForm.get('text_massage')?.errors&&contactForm.get('text_massage')?.touched"
                                 class="text-danger">
-                                <p *ngIf="contactForm.get('text_massage')?.getError('required')">First Name is Required
+                                <p *ngIf="contactForm.get('text_massage')?.getError('required')">Massage is Required
                                 </p>
-                                <p *ngIf="contactForm.get('text_massage')?.getError('minlength')">First Name minlength
+                                <p *ngIf="contactForm.get('text_massage')?.getError('minlength')">Massage minlength
                                     should be 3</p>
-                                <p *ngIf="contactForm.get('text_massage')?.getError('maxlength')">First Name maxlength
+                                <p *ngIf="contactForm.get('text_massage')?.getError('maxlength')">Massage maxlength
                                     should be 200</p>
                             </div>
                         </div>
                         <button [disabled]="contactForm.invalid" type="submit" 
                             class="btn btn-primary px-4">Send</button>
                     </form>
+                    <div class="social w-50 my-5 m-auto rounded-5">
+                        <ul class="d-flex justify-content-around fs-2">
+                            
+                            <li><a [href]="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp text-success"></i></a>
+                            </li>
+                            <li><a [href]="gmail" target="_blank"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+                            </li>
+                           
+                        </ul>
+                    </div>
                 </div>
 
             </div>

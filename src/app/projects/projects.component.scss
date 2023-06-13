@@ -1,9 +1,9 @@
-
 .line {
     width: 15%;
     height: 3px;
-   
+
 }
+
 .one {
     position: relative;
     margin: 30px 10px;
@@ -35,7 +35,6 @@
         color: white;
         padding: 10px;
         font-weight: bold;
-
     }
 
     &:hover {
@@ -50,8 +49,8 @@
 
 }
 
-.overlay .link{
-   
+.overlay .link {
+
     width: 30px;
     height: 30px;
     background-color: white;
@@ -64,4 +63,11 @@
 
 .overlay .skill {
     width: 100%;
+}
+
+@media screen and (max-width:767px) {
+    .one .overlay h5 ,ul li{
+        font-size: 16px;
+        
+    }
 }

@@ -13,8 +13,10 @@ export class AboutComponent implements OnInit {
   facebook:string = "https://www.facebook.com/romario.noshy";
   linkeDin:string = "https://www.linkedin.com/in/romario-noshy-b2a010142/";
   gitHup:string = "https://github.com/RomarioNoshy";
-  whatsapp:string = "https://web.whatsapp.com/send/?phone=2001550448966&amp;text&amp;type=phone_number&amp;app_absent=0";
-
+  whatsapp:string = "https:/wa.me/+2001550448966";
+  // whatsapp:string = "https://web.whatsapp.com/send/?phone=2001550448966&amp;text&amp;type=phone_number&amp;app_absent=0";
+  gmail:string = "mailto:romarionoshy@gmail.com";
+  
   
 
   constructor() { }
