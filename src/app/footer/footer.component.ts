@@ -14,7 +14,6 @@ export class FooterComponent implements OnInit {
   facebook: string = "https://www.facebook.com/romario.noshy";
   linkeDin: string = "https://www.linkedin.com/in/romario-noshy-b2a010142/";
   gitHup: string = "https://github.com/RomarioNoshy";
-  whatsapp:string = "https:/wa.me/+2001550448966";
   gmail:string = "mailto:romarionoshy@gmail.com";
   constructor() { }
 
