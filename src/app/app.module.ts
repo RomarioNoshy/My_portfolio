@@ -14,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ServicesComponent } from './services/services.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,9 @@ import { ServicesComponent } from './services/services.component';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    RouterModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

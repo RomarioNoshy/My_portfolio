@@ -1,9 +1,12 @@
+import { animate, animation, style, transition, trigger, state,} from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
-// import { saveAs } from 'file-saver';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  styleUrls: ['./about.component.scss'],
+  animations: [
+    
+  ]
 })
 export class AboutComponent implements OnInit {
 
