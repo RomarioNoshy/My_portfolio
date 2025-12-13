@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  backgroundHome: any =('url(assets/images/backgroundHome.jpg)')
+  // backgroundHome: any =('url(assets/images/backgroundHome.jpg)')
   constructor() { }
 
   ngOnInit(): void {
-   
+
   }
 
 }

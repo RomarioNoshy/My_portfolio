@@ -1,15 +1,32 @@
 section {
-    background-position: center center; 
+    background-position: center center;
     background-size: cover;
     height: 100vh;
+    background-color: #f9f9f9;
 }
 
 .row {
     height: 100vh;
 
+    .caption {
+        width: 50%;
+    }
+
+    .Welcome {
+        background-color: #dfe7eb;
+        color: #598aa3;
+        border: 1px solid #b5c4cc;
+    }
+
     h1 {
-        text-shadow: 5px 5px 7px black;
-        font-size: 50px;
+        // text-shadow: 5px 5px 7px black;
+        font-size: 60px;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 20px;
+        color: #5c594a;
         font-weight: 600;
     }
 
@@ -21,10 +38,58 @@ section {
 }
 
 @media screen and (max-width: 767px) {
+
+    .Welcome {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .caption {
+        width: 100% !important;
+    }
+
     .caption h1 {
         font-size: 30px;
     }
-    .shadow{
+
+    .shadow {
         font-size: 16px;
+    }
+}
+
+.loader {
+    width: 40px;
+    height: 70px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    position: relative;
+    border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 50%);
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    animation: fadeDown 1s ease-out infinite;
+}
+
+@keyframes fadeDown {
+    0% {
+        top: 0%;
+        opacity: 1;
+    }
+
+    100% {
+        top: 60%;
+        opacity: 0;
     }
 }

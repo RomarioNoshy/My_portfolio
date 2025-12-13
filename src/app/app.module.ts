@@ -13,8 +13,9 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ServicesComponent } from './services/services.component';
+import { SkillsComponent } from './skills/skills.component';
 import { RouterModule } from '@angular/router';
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { RouterModule } from '@angular/router';
     NotFoundComponent,
     NavBarComponent,
     FooterComponent,
-    ServicesComponent,
+    SkillsComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,9 +36,10 @@ import { RouterModule } from '@angular/router';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    RouterModule
+    RouterModule,
+    CardModule
   ],
-  
+
   providers: [],
   bootstrap: [AppComponent]
 })

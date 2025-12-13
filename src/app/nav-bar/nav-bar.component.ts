@@ -13,23 +13,24 @@ export class NavBarComponent implements OnInit {
   }
 
   toHome() {
-    document.getElementById("home")?.scrollIntoView({behavior:"smooth"}); 
+    document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
   }
 
-  toAbout(){
-    document.getElementById("about")?.scrollIntoView({behavior:"smooth"}); 
+  toAbout() {
+    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
   }
 
-  toServices(){
-    document.getElementById("services")?.scrollIntoView({behavior:"smooth"}); 
+
+  toProjects() {
+    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
   }
 
-  toProjects(){
-    document.getElementById("projects")?.scrollIntoView({behavior:"smooth"}); 
+  toSkills() {
+    document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" });
   }
 
-  toContact(){
-    document.getElementById("contact")?.scrollIntoView({behavior:"smooth"}); 
+  toContact() {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   }
 
 }

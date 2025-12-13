@@ -14,8 +14,32 @@ export class FooterComponent implements OnInit {
   facebook: string = "https://www.facebook.com/romario.noshy";
   linkeDin: string = "https://www.linkedin.com/in/romario-noshy-b2a010142/";
   gitHup: string = "https://github.com/RomarioNoshy";
-  gmail:string = "mailto:romarionoshy@gmail.com";
+  whatsapp: string = "https://wa.me/201550448966";
+  gmail: string = "mailto:romarionoshy@gmail.com";
+  myCv: string = "assets/Romario Noshy Resume.pdf"
+
   constructor() { }
+
+  toHome() {
+    document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
+  }
+
+  toAbout() {
+    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+  }
+
+
+  toProjects() {
+    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+  }
+
+  toSkills() {
+    document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" });
+  }
+
+  toContact() {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  }
 
   ngOnInit(): void {
   }

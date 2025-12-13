@@ -6,7 +6,7 @@
 
 .profile-image {
     width: 100%;
-    height: 420px;
+    height: 100%;
     border-radius: 20px;
 
     img {
@@ -18,7 +18,7 @@
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
         box-shadow: 5px 5px 14px -4px rgb(0, 0, 0);
-        border: 3px solid #09c;
+        // border: 3px solid #09c;
     }
 
 }
@@ -44,10 +44,13 @@ ul {
         height: 200px;
         margin: auto;
     }
+
     .body {
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
+        display: flex;
+        justify-content: center;
     }
-    
+
     .caption .fw-bold {
         display: none;
     }

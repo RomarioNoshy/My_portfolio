@@ -1,32 +1,66 @@
-<section class="bg-dark text-white p-5 text-center">
+<section class="footer p-5 ">
     <div class="container">
-        <div class="row d-flex justify-content-between">
-            <div class="col-md-4 col-sm-12 mb-3">
-                <div class="projects d-flex flex-column">
-                    <h5>Projects</h5>
-                    <a [href]="portLink" target="_blank">portfolio</a>
-                    <a [href]="myStoreLink" target="_blank">Store</a>
-                    <a [href]="movieLink" target="_blank">Movies</a>
+        <div class="row">
+            <div class="footer_row d-flex justify-content-between flex-wrap">
+                <div class="col-xl-3 col-sm-12">
+                    <div class="footer_item d-flex flex-column flex-start">
+                        <h5 class="fw-bold">Navigation</h5>
+                        <ul class="">
+                            <li class="nav-item">
+                                <a (click)="toHome()" routerLinkActive="active" routerLink="home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a (click)="toAbout()" routerLinkActive="active" routerLink="about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a (click)="toProjects()" routerLinkActive="active" routerLink="projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a (click)="toSkills()" routerLinkActive="active" routerLink="skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a (click)="toContact()" routerLinkActive="active" routerLink="contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-12">
+                    <div class="footer_item d-flex flex-column">
+                        <h5 class="fw-bold">Social</h5>
+                        <ul class="d-flex flex-column">
+                            <li><a [href]="facebook" target="_blank">Facebook</a></li>
+                            <li><a [href]="linkeDin" target="_blank">LinkeDin</a></li>
+                            <li><a [href]="whatsapp" class="text-success" target="_blank">Whatsapp</a></li>
+                            <li><a [href]="gitHup" target="_blank">GitHup</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-12">
+                    <div class="footer_item d-flex flex-column">
+                        <h5 class="fw-bold">Resources</h5>
+                        <a [href]="myCv" target="_blank" class="text-white fw-bold text-decoration-none"
+                            download="Romario_Resume.pdf">
+                            Resume</a>
+
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-12">
+                    <div class="footer_item">
+                        <h5 class="fw-bold">Contact</h5>
+                        <ul class="d-flex flex-column">
+
+                            <li><a [href]="gmail" target="_blank">romarionoshy@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12 border-top border-1">
+                    <div class="title mt-4 text-center">
+                        <h4>Copyright © 2023, All Right Reserved Romario Noshy Front-End Developer.</h4>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12 ">
-                <div class="social">
-                    <h5 class="text-center">Contact me</h5>
-                    <ul class="d-flex justify-content-between fs-4">
-                        <li><a [href]="facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a [href]="linkeDin" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                        <li><a [href]="gitHup" target="_blank"><i class="fa-brands fa-github text-white"></i></a>
-                        </li>
-                        <li><a [href]="gmail" target="_blank"><i class="fa-sharp fa-solid fa-envelope text-danger"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="title mt-4">
-                    <h4>Copyright © 2023, All Right Reserved Romario Noshy Front-End Developer.</h4>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
