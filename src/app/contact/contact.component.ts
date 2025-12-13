@@ -23,7 +23,7 @@ export class ContactComponent implements OnInit {
   }
 
   whatsapp: string = "https://wa.me/201550448966";
-  gmail: string = "mailto:romarionoshy@gmail.com";
+  gmail: string = "https://mail.google.com/mail/?view=cm&fs=1&to=romarionoshy@gmail.com&su=Contact%20From%20Portfolio&body=Hello%20I%20want%20to%20contact%20you";
   facebook: string = "https://www.facebook.com/romario.noshy";
   linkeDin: string = "https://www.linkedin.com/in/romario-noshy-b2a010142/";
   gitHup: string = "https://github.com/RomarioNoshy";
