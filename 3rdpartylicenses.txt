@@ -214,6 +214,9 @@ THE SOFTWARE.
 ngx-typed-js
 MIT
 
+primeng
+MIT
+
 rxjs
 Apache-2.0
                                Apache License
