@@ -1,0 +1,154 @@
+/* You can add global styles to this file, and also import other style files */
+
+$minColor : red;
+$nav-color : #374756;
+$line-color : #554687;
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #f9f9f9 !important;
+}
+
+/* ============================================
+   SCROLL ANIMATIONS
+   ============================================ */
+
+/* Base animation properties */
+.scroll-animate {
+    --animation-delay: 0ms;
+    --animation-duration: 600ms;
+}
+
+/* Hidden state (before animation) */
+.scroll-animate--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Visible state (after animation) */
+.scroll-animate--visible {
+    opacity: 1;
+    visibility: visible;
+    animation-delay: var(--animation-delay);
+    animation-duration: var(--animation-duration);
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Fade Up Animation */
+.scroll-animate--fade-up {
+    animation-name: fadeUp;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade Left Animation */
+.scroll-animate--fade-left {
+    animation-name: fadeLeft;
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade Right Animation */
+.scroll-animate--fade-right {
+    animation-name: fadeRight;
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade In Animation */
+.scroll-animate--fade-in {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Zoom In Animation */
+.scroll-animate--zoom-in {
+    animation-name: zoomIn;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Slide Up Animation */
+.scroll-animate--slide-up {
+    animation-name: slideUp;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered animation helper classes */
+.scroll-animate-stagger-1 { --animation-delay: 100ms; }
+.scroll-animate-stagger-2 { --animation-delay: 200ms; }
+.scroll-animate-stagger-3 { --animation-delay: 300ms; }
+.scroll-animate-stagger-4 { --animation-delay: 400ms; }
+.scroll-animate-stagger-5 { --animation-delay: 500ms; }
+
+/* Accessibility: Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .scroll-animate--visible {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+}
